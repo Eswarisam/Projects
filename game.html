@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+</head>
+<body>
+    <button onclick="game('stone')">Stone</button>
+    <button onclick="game('paper')">Paper</button>
+    <button onclick="game('scissor')">Scissor</button>
+
+    <h3 id="result"></h3>
+    <script>
+        let result = document.getElementById("result")
+
+        function game(user){
+            let choices =["stone","paper","scissor"];
+            let computer =choices[Math.floor(Math.random)*3]
+
+            if(user === computer){
+                result.innerText=`You:${user}\nComputer:${computer}\nResult:Draw`
+            }else if(
+                (user === "stone"&& computer==="scissor")||
+                (user === "scissor"&& computer==="paper")||
+                (user === "paper" && computer ==="stone")
+            ){
+                result.innerText=`You:${user}\nComputer:${computer}\nResult:You win`
+            }else{
+                result.innerText=`You:${user}\nComputer:${computer}\nResult:Computer win`
+            }   
+        }
+
+    </script>
+</body>
+</html>
