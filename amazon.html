@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+        }
+        .container{
+            height: 1070px;
+            width: 85%;
+            /* border: 2px solid black; */
+            margin: auto;
+            margin-top: 20px;
+        }
+        .parent{
+            height: 40px;
+            width:100%; 
+            background-color:black;
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 10px;
+        }
+        .searchbar{
+            height: 30px;
+            width:500px;
+            background-color:white;
+            border-radius: 2px;
+        }
+        .input{
+            width: 410px;
+            border: 0px;
+        }
+        .searchbutton{
+           height: 30px;
+           width: 30px;
+           background-color: orange;
+           border: 0px ;
+           margin-left: 14px;
+        }
+        .down{
+            border: 0px;
+            font-size: 12px;
+        }
+        .logo{
+            height: 35px;
+            width: 105px;
+        
+        }
+        .place{
+            color: white ;
+        }
+        .sign{
+            color: white;
+        }
+        .all{
+            height: 40px;
+            width:100% ;
+            background-color:#46484a;
+        }
+        .menu{
+            height: 40px;
+            color: white;
+            display: grid;
+            grid-template-columns:  40px 35px 97px 118px 70px 75px 35px 700px ;
+            align-content: center;
+            font-size: 12px;
+            font-family: Verdana;
+        }
+        .details{
+           margin-left: 480px;
+        }
+        .primeimg{
+            width: 100%;
+            height: 230px ;
+        }
+        .things{
+            width: 100%;
+            height: 400px;
+            background-color:lab(96.54% 0.01 -0.01);
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .image{
+        
+            height: 250px;
+            width: 200px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .items{
+            height: 330px;
+            width: 220px;
+            background-color: white;
+            padding-left: 20px;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+        .All{
+            font-size: 11px ;
+            font-family: Arial;
+        }
+        .menubar{
+            padding-left: 15px;
+        }
+        .back{
+            height: 40px;
+            width: 100%;
+            background-color: rgb(63, 63, 68);
+            color: white;
+            font-family: Arial;
+            font-size: 13px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .footer{
+            height: 260px;
+            width: 100%;
+            background-color:rgb(26, 26, 36);
+            color: white;
+            font-family: Arial ;
+            display: flex;
+            align-content: center;
+            justify-content: space-around;
+            line-height: 25px;
+            padding-top: 20px;
+            font-size: 12px;
+        }
+        .head{
+            padding-bottom: 7px;
+        }
+    </style>
+</head>
+<body>
+    <!-- amazon website -->
+    <div class="container">
+        <div class="parent">
+            <div><img src="./images/amazonimg1.jpg" alt="logo" class="logo"></div>
+            <div class="place">Deliver <br> <i class="fa-solid fa-location-dot"></i>chennai</div>
+            <div class="searchbar">
+                <div class="search">
+                     <select name="" id="" class="down">
+                        <option value="all">All</option>
+                     </select>
+                     <input type="text" class="input" placeholder="Search Amazon">
+                     <button class="searchbutton"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+            <div class="sign ">sign in</div>
+            <div class="sign">orders</div>
+            <div class="sign icon" ><i class="fa-solid fa-cart-shopping"></i></div>
+        </div>
+        <div class="all">
+            <div class="menu">
+                <div class="menubar"><i class="fa-solid fa-bars"></i></div>
+                <div>All</div>
+                <div>Today's details</div>
+                <div>Customer service</div>
+                <div>Registry</div>
+                <div>Gift Crafts</div>
+                <div>sell</div>
+                <div class="details">Shop details in Electronics</div>
+            </div>
+        </div>
+        <div>
+            <img src="./images/amazonprime img.jpg" alt="prime day img" class="primeimg" >
+        </div>
+        <div class="things">
+            <div class="items">
+                <div>Shop Laptops & Tables</div>
+                <div><img src="./images/lap img .jpg" alt="" class="image"></div>
+                <div>Shop now</div>
+            </div>
+            <div class="items">
+                <div>Shop SmartWatches</div>
+                <div><img src="./images/smartwatch img.jpg" alt="" class="image"></div>
+                <div>Shop now</div>
+            </div>
+            <div class="items">
+                <div>Create with Strip lights</div>
+                <div><img src="./images/strip light.jpg" alt="" class="image"></div>
+                <div>Shop now</div>
+            </div>
+            <div class="items">
+                <div>Home Refresh ideas</div>
+                <div><img src="/images/water tap.jpg" alt="" class="image"></div>
+                <div>Shop now</div>
+            </div>
+        </div>
+        <div><h3 class="back">Back to top </h3></div>
+        <div class="footer">
+            <div class="footnote">
+                <h3 class="head">Get to Know Us</h3>
+                <p>About Us</p>
+                <p>Careers</p>
+                <p>Press Release</p>
+                <p>Amazon Science</p>
+            </div>
+            <div class="footnote">
+                <h3 class="head">Connect With Us</h3>
+                <p>Facebook</p>
+                <p>Twitter</p>
+                <p>Instagram</p>
+            </div>
+            <div class="footnote">
+                <h3 class="head">Make Money with Us</h3>
+                <p>Sell on Amazon</p>
+                <p>Sell under Amazon Accelrator</p>
+                <p>Protect and Build Your Brand</p>
+                <p>Amazon Global selling</p>
+                <p>Become an Affiliate</p>
+                <p>Fulfillment by Amazon</p>
+                <p>Advertise your Products</p>
+                <p>Amazon Pay on Merchants</p>
+            </div>
+            <div class="footnote">
+                <h3 class="head">Let Us Help You</h3>
+                <p>Your Account</p>
+                <p>Return Centre</p>
+                <p>100% Purchase Protection</p>
+                <p>Amazon App Download</p>
+                <p>Help</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
