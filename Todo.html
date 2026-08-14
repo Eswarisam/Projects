@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            
+            background-color: rgb(210, 210, 218);
+            /* display: inline; */
+        }
+     #box{
+        height: 500px;
+        width: 500px;
+        background-color: white;
+        border-radius: 10px;
+        margin: auto;
+
+     }
+     #head{
+        background-color: white;
+        padding-left: 30px;
+     }
+     #input{
+        background-color: white;
+        margin-left:20px;
+        padding: 10px 190px 10px 5px;
+        border: 1px solid rgb(207, 196, 174);
+        border-radius: 5px;
+
+     }
+     #btn{
+        padding: 10px 20px 10px 20px;
+        margin-left: 15px;
+        border: 1px solid white;
+        background-color: rgb(63, 63, 216);
+        color: white;
+        border-radius: 5px;
+     }
+    </style>
+</head>
+<body>
+    <div id="box"><br>
+       <h2 id="head">To-Do List</h2>
+       <input type="text" placeholder="Add a new task" id="input">
+       <button id="btn">Add</button>
+    </div>
+    <script>
+        let input = document.getElementById("input")
+        let btn = document.getElementById("btn")
+        let box = document.getElementById("box")
+        btn.addEventListener("click",()=>{
+            let task = document.createElement("p")
+            box.appendChild(task)
+            task.innerText =input.value
+            input.value=""
+            task.style.height ="30px"
+            task.style.width ="400px"
+            task.style.marginLeft="20px"
+            task.style.borderRadius ="6px"
+            task.style.border ="1px solid #e5e7eb "
+            task.style.padding = "5px 50px 0px 10px"
+            task.style.backgroundColor="white" 
+            let delbut = document.createElement("button")
+            task.appendChild(delbut)
+            delbut.innerText="Delete"
+            task.style.position="relative"
+            delbut.style.position="absolute"
+            delbut.style.top ="6px"
+            delbut.style.right ="10px"
+            delbut.style.padding="5px 10px 5px 5px"
+            delbut.style.backgroundColor="red"
+            delbut.style.color="white"
+            delbut.style.borderRadius="5px"
+            delbut.style.border ="1px solid black"
+            delbut.style.fontSize="12px"
+
+            delbut.addEventListener("click",()=>{
+                task.remove()
+            })
+        })
+
+    </script>
+</body>
+</html>
